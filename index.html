@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bundler demo</title>
+</head>
+<body>
+    <ul>
+        <li><a href="?p=make">GNU Make</a></li>
+    </ul>
+
+    <script>
+        var p = /[&\?]p=(\w+)/.exec(location.search);
+        p = p ? p[1] : 'make';
+
+        var script = document.createElement('script');
+        script.src = './dist/' + p + '/app.js';
+        document.body.append(script);
+    </script>
+</body>
+</html>
