@@ -1,20 +1,12 @@
 .DS_Store
-.well-known
 
 # node
 node_modules
 npm-debug.log
-.env
 
 # app
-.nginx
-*.nginx.conf
-views/*-dist
-# views/*-dist-map.json
-
-# build
-__build
-__build.lock
+dist
+lib
 
 # IDE
 .idea
@@ -24,7 +16,3 @@ __build.lock
 
 sftp-config.json
 sftp-settings.json
-
-
-# agentx
-agentx-conf.json

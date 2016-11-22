@@ -2,11 +2,11 @@
  * foo
  */
 
-const $ from 'jquery';
+import $ from 'jquery';
 
 const foo = {
     baz() {
-        console.log('Links length: %d', $('a[href]').length);
+        console.log('Links length: ' + $('a[href]').length);
     }
 };
 

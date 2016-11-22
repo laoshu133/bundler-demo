@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Bundler demo</title>
+    <style>
+        #logs{
+            border: 1px dashed #CCC;
+            padding: 10px 10px 0;
+            width: 400px;
+        }
+        #logs p{
+            border-top: 1px dashed #CCC;
+            margin: -11px 0 0;
+            padding: 15px 0 25px;
+        }
+    </style>
 </head>
 <body>
+    <div id="logs"></div>
     <ul>
         <li><a href="?p=make">GNU Make</a></li>
     </ul>
 
+    <script>
+        var _log = console.log;
+        console.log = function() {
+            var args = [].slice.call(arguments);
+
+            _log.apply(console, args);
+            logs.innerHTML += '<p>'+ args.join(' ') +'</p>';
+        };
+    </script>
     <script>
         var p = /[&\?]p=(\w+)/.exec(location.search);
         p = p ? p[1] : 'make';
