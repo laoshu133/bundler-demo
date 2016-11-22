@@ -8,7 +8,8 @@
     "grunt": "grunt",
     "gulp": "gulp",
     "webpack": "webpack --progress",
-    "all": "npm run make && npm run grunt && npm run gulp && npm run webpack",
+    "rollup": "rollup -c rollup.config.js && echo Rollup done.",
+    "all": "npm run make && npm run grunt && npm run gulp && npm run webpack && npm run rollup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +37,10 @@
     "gulp-browserify": "^0.5.1",
     "gulp-clean": "^0.3.2",
     "gulp-sequence": "^0.4.6",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "webpack": "^1.13.3"
   },
   "keywords": [
