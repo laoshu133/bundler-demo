@@ -7,7 +7,8 @@
     "make": "make clean && make",
     "grunt": "grunt",
     "gulp": "gulp",
-    "all": "npm run make && npm run grunt && npm run gulp",
+    "webpack": "webpack --progress",
+    "all": "npm run make && npm run grunt && npm run gulp && npm run webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,7 +35,8 @@
     "gulp-babel": "^6.1.2",
     "gulp-browserify": "^0.5.1",
     "gulp-clean": "^0.3.2",
-    "gulp-sequence": "^0.4.6"
+    "gulp-sequence": "^0.4.6",
+    "webpack": "^1.13.3"
   },
   "keywords": [
     "bundler",
