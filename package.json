@@ -8,7 +8,7 @@
     "grunt": "grunt",
     "gulp": "gulp",
     "webpack": "webpack --progress",
-    "rollup": "rollup -c rollup.config.js && echo Rollup done.",
+    "rollup": "rm -rf lib dist/rollup && rollup -c rollup.config.js && echo Rollup done.",
     "all": "npm run make && npm run grunt && npm run gulp && npm run webpack && npm run rollup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

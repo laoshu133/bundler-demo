@@ -4,7 +4,7 @@
 
 import $ from 'jquery';
 
-const bar = function() {
+const unused = function() {
     console.log('Unused function');
 };
 

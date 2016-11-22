@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
+    sourceMap: false,
     entry: 'src/app.js',
     plugins: [
         // babel({
