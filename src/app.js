@@ -6,7 +6,7 @@ import foo from './foo';
 
 const demo = {
     init() {
-        console.log('Demo.init');
+        console.log('App.init');
 
         foo.baz();
     }

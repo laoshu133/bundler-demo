@@ -10,6 +10,8 @@ const unused = function() {
 
 const foo = {
     baz() {
+        console.log('foo.baz');
+
         console.log('Links length: ' + $('a[href]').length);
     }
 };
